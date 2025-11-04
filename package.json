@@ -46,13 +46,14 @@
     "webpack": "^4.0.0 || ^5.0.0"
   },
   "dependencies": {
-    "@temporalio/worker": "^1.13.1"
+    "@temporalio/worker": "^1.0.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.39.1",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
     "@types/node": "^24.10.0",
+    "conventional-changelog-conventionalcommits": "^9.1.0",
     "eslint": "^9.39.1",
     "prettier": "^3.6.2",
     "semantic-release": "^24.0.0",

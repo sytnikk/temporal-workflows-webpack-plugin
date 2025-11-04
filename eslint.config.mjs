@@ -5,7 +5,7 @@ export default [
   js.configs.recommended,
   ...tseslint.configs.recommended,
   {
-    ignores: ['dist/', 'node_modules/', '*.config.js', '*.config.ts'],
+    ignores: ['dist/', 'node_modules/', '*.config.*'],
   },
   {
     files: ['src/**/*.ts'],
