@@ -1,3 +1,9 @@
+## [1.0.1](https://github.com/sytnikk/temporal-workflows-webpack-plugin/compare/v1.0.0...v1.0.1) (2025-11-04)
+
+### Bug Fixes
+
+* **ci:** delete 16 node version from supported versions ([11977f2](https://github.com/sytnikk/temporal-workflows-webpack-plugin/commit/11977f25a74e3845fddf768e1897c55ba1eec2ba))
+
 ## 1.0.0 (2025-11-04)
 
 ### Features
