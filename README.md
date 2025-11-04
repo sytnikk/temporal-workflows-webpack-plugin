@@ -263,7 +263,7 @@ Make sure webpack is properly tracking changes in your workflow files.
 
 ## Compatibility
 
-- Node.js: >= 14
+- Node.js: >= 18.0.0
 - Webpack: ^4.0.0 || ^5.0.0
 - @temporalio/worker: ^1.0.0
 
