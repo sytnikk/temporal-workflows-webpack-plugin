@@ -1,0 +1,38 @@
+# Source files - не публикуем в npm
+src/
+tsconfig.json
+tsup.config.ts
+
+# Development files
+*.log
+.vscode/
+.idea/
+.DS_Store
+
+# Testing
+coverage/
+.nyc_output/
+*.test.ts
+*.test.js
+*.spec.ts
+*.spec.js
+
+# Build artifacts
+*.tsbuildinfo
+node_modules/
+
+# Git
+.git/
+.gitignore
+
+# CI/CD
+.github/
+.gitlab-ci.yml
+.travis.yml
+
+# Environment
+.env
+.env.*
+
+# Only ship dist/, README, examples, CHANGELOG, and package.json
+
