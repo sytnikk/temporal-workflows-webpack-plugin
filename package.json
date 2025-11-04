@@ -41,6 +41,9 @@
     "type": "git",
     "url": "https://github.com/sytnikk/temporal-workflows-webpack-plugin"
   },
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "peerDependencies": {
     "@temporalio/worker": "^1.0.0",
     "webpack": "^4.0.0 || ^5.0.0"
