@@ -172,8 +172,6 @@ Main options:
 
 ## Examples
 
-More examples available in [examples.md](./examples.md).
-
 ### Simple Project
 
 ```javascript
