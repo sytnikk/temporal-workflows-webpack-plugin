@@ -1,3 +1,9 @@
+## [1.0.2](https://github.com/sytnikk/temporal-workflows-webpack-plugin/compare/v1.0.1...v1.0.2) (2025-11-07)
+
+### Bug Fixes
+
+* use @temporalio/worker as peer dependency only ([4be95da](https://github.com/sytnikk/temporal-workflows-webpack-plugin/commit/4be95da250ea0fe79ed19850a775f04574d39446))
+
 ## [1.0.1](https://github.com/sytnikk/temporal-workflows-webpack-plugin/compare/v1.0.0...v1.0.1) (2025-11-04)
 
 ### Bug Fixes
