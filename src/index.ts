@@ -9,8 +9,6 @@ export type { TemporalWorkflowsPluginOptions, WorkflowBundleConfig } from './typ
 export class TemporalWorkflowsPlugin {
   private readonly options: TemporalWorkflowsPluginOptions;
 
-  private watchedFiles: Set<string> = new Set();
-
   private logger!: ReturnType<Compiler['getInfrastructureLogger']>;
 
   constructor(options: TemporalWorkflowsPluginOptions) {
@@ -47,10 +45,7 @@ export class TemporalWorkflowsPlugin {
     this.logger.info('Bundling workflows...');
 
     for (const workflow of this.options.workflows) {
-      const workflowPath = path.resolve(context, workflow.workflowsPath);
-
       await this.bundleWorkflow(context, workflow);
-      this.watchedFiles.add(workflowPath);
     }
   }
 

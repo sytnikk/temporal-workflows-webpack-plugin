@@ -35,7 +35,7 @@ Typically, developers handle this manually through separate npm scripts. This pl
 ## Features
 
 - ✅ **Automatic bundling** of workflows during project build
-- ⚡ **Watch mode** with incremental rebuilds (only changed workflows)
+- ⚡ **Watch mode** with incremental rebuilds
 - 🎯 **Full support** for all `BundleOptions` from `@temporalio/worker`
 - 🔧 **Flexible configuration** - global and per-workflow options
 - 📦 **TypeScript** typings out of the box
@@ -43,12 +43,22 @@ Typically, developers handle this manually through separate npm scripts. This pl
 
 ## Installation
 
+**Prerequisites**: This plugin requires `@temporalio/worker` to be installed in your project.
+
 ```bash
+# Install the plugin as a dev dependency
 npm install --save-dev temporal-workflows-webpack-plugin
-# or
+
+# If you don't have @temporalio/worker yet, install it as well
+npm install @temporalio/worker
+
+# or with yarn
 yarn add -D temporal-workflows-webpack-plugin
-# or
+yarn add @temporalio/worker
+
+# or with pnpm
 pnpm add -D temporal-workflows-webpack-plugin
+pnpm add @temporalio/worker
 ```
 
 ## Quick Start
