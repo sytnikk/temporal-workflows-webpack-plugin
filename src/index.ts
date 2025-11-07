@@ -12,7 +12,34 @@ export class TemporalWorkflowsPlugin {
   private logger!: ReturnType<Compiler['getInfrastructureLogger']>;
 
   constructor(options: TemporalWorkflowsPluginOptions) {
+    this.validateOptions(options);
     this.options = options;
+  }
+
+  private validateOptions(options: TemporalWorkflowsPluginOptions): void {
+    if (!options.defaultOutputDir || typeof options.defaultOutputDir !== 'string') {
+      throw new Error(
+        'TemporalWorkflowsPlugin: "defaultOutputDir" is required and must be a non-empty string'
+      );
+    }
+
+    if (!Array.isArray(options.workflows)) {
+      throw new Error('TemporalWorkflowsPlugin: "workflows" must be an array');
+    }
+
+    if (options.workflows.length === 0) {
+      throw new Error(
+        'TemporalWorkflowsPlugin: "workflows" array cannot be empty. At least one workflow must be specified'
+      );
+    }
+
+    options.workflows.forEach((workflow, index) => {
+      if (!workflow.workflowsPath || typeof workflow.workflowsPath !== 'string') {
+        throw new Error(
+          `TemporalWorkflowsPlugin: workflow at index ${index} must have a non-empty "workflowsPath" string`
+        );
+      }
+    });
   }
 
   private async bundleWorkflow(
