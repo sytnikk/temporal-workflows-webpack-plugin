@@ -1,3 +1,10 @@
+## [1.1.0](https://github.com/sytnikk/temporal-workflows-webpack-plugin/compare/v1.0.2...v1.1.0) (2025-11-08)
+
+### Features
+
+* add option validation ([741f1fd](https://github.com/sytnikk/temporal-workflows-webpack-plugin/commit/741f1fd1b6ef713e624406fb380f183383fc94e6))
+* improve build logging ([8592b33](https://github.com/sytnikk/temporal-workflows-webpack-plugin/commit/8592b33e59db68d1c42cac91206f06d04c96a916))
+
 ## [1.0.2](https://github.com/sytnikk/temporal-workflows-webpack-plugin/compare/v1.0.1...v1.0.2) (2025-11-07)
 
 ### Bug Fixes
