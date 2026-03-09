@@ -49,12 +49,12 @@
     "webpack": "^4.0.0 || ^5.0.0"
   },
   "devDependencies": {
-    "@eslint/js": "^9.39.3",
+    "@eslint/js": "^9.39.4",
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
     "@types/node": "^24.10.0",
     "conventional-changelog-conventionalcommits": "^9.2.0",
-    "eslint": "^9.39.3",
+    "eslint": "^9.39.4",
     "prettier": "^3.8.1",
     "semantic-release": "^24.2.9",
     "tsup": "^8.5.1",
